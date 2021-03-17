@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      /* .titolo {
+        text-align: center;
+        color: red;
+      } */
+
+      #lol {
+      }
+
+      #lol2 {
+      }
+
+      .pair {
+        color: red;
+      }
+
+      .odd {
+        color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div>
+
+      <h1 id="lol">Hello</h1>
+    </div>
+
+    <script type="text/javascript">
+
+     // Un alert() espone 5 numeri generati casualmente.
+     // Da li parte un timer di 30 secondi.
+     // Dopo 30 secondi l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
+     // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+
+     function getRandom() {
+
+          var random = Math.round(Math.random() * (100 - 1) + 1);
+
+          return random;
+     }
+
+     function get5casualNumbers() {
+
+          var randomNumbers = [];
+
+          while ( randomNumbers.length < 5) {
+
+               randomNumbers.push(getRandom());
+
+          }
+
+          alert("Numeri casuali : " + randomNumbers);
+     }
+
+     get5casualNumbers();
+
+
+
+      
+    </script>
+  </body>
+</html>
