@@ -104,11 +104,9 @@
 
      function askForNumber () {
 
-      var ask = prompt("Inserisci un numero...");
+      var ask = parseInt(prompt("Inserisci un numero..."));
 
       userNumbers.push(ask);
-
-      console.log(userNumbers);
 
       trueNumbers(ask);
 
@@ -121,6 +119,7 @@
      function ThirtySecondsInterval () {
 
           clock = setInterval(askForNumber, seconds);
+          
      }
 
 
